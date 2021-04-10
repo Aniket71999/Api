@@ -1,0 +1,13 @@
+<div>
+  <div class="body">
+    <div class="heading">Classic Photos</div>
+
+    <div class="block_container" *ngFor="let key of data">
+      <div class="block_container__horizontal"></div>
+      <div class="block_container__image">
+        <img class="block_container__image__block" [src]="key.download_url" />
+      </div>
+      <div class="block_container__author">{{ key.author }}</div>
+    </div>
+  </div>
+</div>
